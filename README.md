@@ -1,6 +1,6 @@
 #ColorPopover
 
-A ColorPopover based on WEPopover Created by Werner Altewischer.
+A ColorPopover is a very simple component for iPhone/iPad that provides a "Popover" color picker.
 
 ##Supported Platforms
 
