@@ -14,7 +14,6 @@ In order to install `ColorPopover`, you'll need to copy the ColorPopover folder 
 
 In order to use `ColorPopover`, you'll need to include the following code in your project:
 
-`
     if (!self.popoverController) {
 		
 		ColorViewController *contentViewController = [[ColorViewController alloc] init];
@@ -33,11 +32,10 @@ In order to use `ColorPopover`, you'll need to include the following code in you
 		self.popoverController = nil;
 	}
 
-`
 
-You will want to implement the method `colorPopoverControllerDidSelectColor` from `ColorViewControllerDelegate`
+You will want to implement the method `colorPopoverControllerDidSelectColor` from `ColorViewControllerDelegate` :
 
-`
+
 -(void) colorPopoverControllerDidSelectColor:(NSString *)hexColor{
 	
     self.view.backgroundColor = [GzColors colorFromHex:hexColor];
@@ -49,7 +47,7 @@ You will want to implement the method `colorPopoverControllerDidSelectColor` fro
     self.popoverController = nil;
 
 }
-`
+
 
  
 ##Credits & Contributors
