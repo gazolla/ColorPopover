@@ -2,6 +2,9 @@
 
 A ColorPopover is a very simple component for iPhone/iPad that provides a "Popover" color picker.
 
+![](https://github.com/gazolla/ColorPopover/raw/master/screenshot.png)
+
+
 ##Supported Platforms
 
 - iOS 5+
