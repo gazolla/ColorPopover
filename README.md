@@ -33,11 +33,9 @@ In order to use `ColorPopover`, you'll need to include the following code in you
 	}
 
 
-You will want to implement the method:
+You will want to implement the method `colorPopoverControllerDidSelectColor:(NSString *)hexColor` from `ColorViewControllerDelegate` to get the result color selected. To use the color selected you should call the ` colorFromHex:(NSString *)hexColor` as the follow example:
 
- - (void) colorPopoverControllerDidSelectColor: (NSString *) hexColor;
-
-from `ColorViewControllerDelegate`.
+	self.view.backgroundColor = [GzColors colorFromHex:hexColor];
 
 
  
