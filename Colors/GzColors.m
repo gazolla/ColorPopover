@@ -1,0 +1,13 @@
+//
+//  GzColors.m
+//  Colors
+//
+//  Created by Gazolla on 31/08/12.
+//  Copyright (c) 2012 Gazolla. All rights reserved.
+//
+
+#import "GzColors.h"
+
+@implementation GzColors
+
+@end
