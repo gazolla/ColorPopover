@@ -39,10 +39,15 @@ You will want to implement the method `colorPopoverControllerDidSelectColor` fro
 
 `
 -(void) colorPopoverControllerDidSelectColor:(NSString *)hexColor{
+	
     self.view.backgroundColor = [GzColors colorFromHex:hexColor];
+
     [self.view setNeedsDisplay];
+
     [self.popoverController dismissPopoverAnimated:YES];
+
     self.popoverController = nil;
+
 }
 `
 
@@ -64,7 +69,7 @@ ColorPopover based on WEPopover Created by Werner Altewischer:
 `ColorPopover` is licensed under the MIT license, which is reproduced in its entirety here:
 
 
->Copyright (c) 2011 Sebastian Gazolla Jr
+>Copyright (c) 2012 Sebastian Gazolla Jr
 >
 >Permission is hereby granted, free of charge, to any person obtaining a copy
 >of this software and associated documentation files (the "Software"), to deal
