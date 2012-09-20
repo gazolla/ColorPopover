@@ -109,7 +109,7 @@
     
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 240,250)];
     
-    scroll.contentSize = CGSizeMake(250, 320);
+    scroll.contentSize = CGSizeMake(200, 320);
     [self.view addSubview:scroll];
     
 	if (self.buttonCollection != nil) {
