@@ -14,13 +14,23 @@
 
 @implementation ColorViewController
 
+const CGSize kPortraitContentSize = { 240, 250 };
+const CGSize kLandscapeContentSize = { 320, 170 };
+
 @synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.contentSizeForViewInPopover = CGSizeMake(240,250);
+		if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
+		{
+			self.contentSizeForViewInPopover = kPortraitContentSize;
+		}
+		else
+		{
+			self.contentSizeForViewInPopover = kLandscapeContentSize;
+		}
     }
     return self;
 }
@@ -33,15 +43,9 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 -(void) createSimplyfiedOrdenatedColorsArray{
@@ -106,12 +110,23 @@
 
 
 -(void)loadColorButtons{
+    int iMax = 7;
+	int jMax = 5;
+	
+	if (UIInterfaceOrientationIsLandscape(self.interfaceOrientation))
+	{
+		int tmp = iMax;
+		iMax = jMax;
+		jMax = tmp;
+	}
+
+    CGRect scrollViewFrame = CGRectZero;
+	scrollViewFrame.size = self.contentSizeForViewInPopover;
+    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:scrollViewFrame];
     
-    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 240,250)];
-    
-    scroll.contentSize = CGSizeMake(200, 320);
+    scroll.contentSize = CGSizeMake(jMax * 40, (iMax + 1) * 40);
     [self.view addSubview:scroll];
-    
+
 	if (self.buttonCollection != nil) {
 		for (ColorButton *colorButton in self.buttonCollection) {
 			[colorButton removeFromSuperview];
@@ -119,13 +134,13 @@
 		self.buttonCollection = nil;
 	}
     
-	self.buttonCollection = [[NSMutableArray alloc]init];
+	self.buttonCollection = [[NSMutableArray alloc]initWithCapacity:iMax * jMax];
 	
     dispatch_queue_t myQueue = dispatch_queue_create("com.gazapps.myqueue", 0);
     dispatch_async(myQueue, ^{
         int colorNumber = 0;
-        for (int i=0; i<=7; i++) {
-            for (int j=0; j<=5; j++) {
+        for (int i=0; i<=iMax; i++) {
+            for (int j=0; j<=jMax; j++) {
                 
                 ColorButton *colorButton = [ColorButton buttonWithType:UIButtonTypeCustom];
                 colorButton.frame = CGRectMake(3+(j*40), 3+(i*40), 35, 35);
