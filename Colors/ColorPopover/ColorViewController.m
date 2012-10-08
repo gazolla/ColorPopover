@@ -127,15 +127,6 @@ const CGSize kLandscapeContentSize = { 320, 170 };
     scroll.contentSize = CGSizeMake(jMax * 40, (iMax + 1) * 40);
     [self.view addSubview:scroll];
 
-	if (self.buttonCollection != nil) {
-		for (ColorButton *colorButton in self.buttonCollection) {
-			[colorButton removeFromSuperview];
-		}
-		self.buttonCollection = nil;
-	}
-    
-	self.buttonCollection = [[NSMutableArray alloc]initWithCapacity:iMax * jMax];
-	
     dispatch_queue_t myQueue = dispatch_queue_create("com.gazapps.myqueue", 0);
     dispatch_async(myQueue, ^{
         int colorNumber = 0;

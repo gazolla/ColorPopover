@@ -22,7 +22,6 @@
     id <ColorViewControllerDelegate> __weak delegate;
 }
 
-@property (nonatomic, strong) NSMutableArray *buttonCollection;
 @property (nonatomic, strong) NSArray *colorCollection;
 @property (nonatomic, weak) id <ColorViewControllerDelegate> delegate;
 
