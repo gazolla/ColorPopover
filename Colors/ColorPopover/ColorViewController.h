@@ -18,9 +18,7 @@
 
 @end
 
-@interface ColorViewController : UIViewController{
-    id <ColorViewControllerDelegate> __weak delegate;
-}
+@interface ColorViewController : UIViewController
 
 @property (nonatomic, strong) NSArray *colorCollection;
 @property (nonatomic, weak) id <ColorViewControllerDelegate> delegate;
