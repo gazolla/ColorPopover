@@ -439,6 +439,10 @@
                             YellowGreen, nil];
 }
 
++ (NSString*) accessibilityLabelForColor:(NSString *)color
+{
+	return NSLocalizedStringFromTable(color, @"ColorPopoverLocalizable", @"");
+}
 
 + (UIColor *) colorFromHex:(NSString *)hex {
     
