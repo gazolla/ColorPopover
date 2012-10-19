@@ -158,6 +158,7 @@ const CGSize kLandscapeContentSize = { 320, 170 };
 				[colorButton setSelected:NO];
 				[colorButton setNeedsDisplay];
 				[colorButton setBackgroundColor:[GzColors colorFromHex:[self.colorCollection objectAtIndex:colorNumber]]];
+				colorButton.accessibilityLabel = [GzColors accessibilityLabelForColor:[self.colorCollection objectAtIndex:colorNumber]];
 				[colorButton setHexColor:[self.colorCollection objectAtIndex:colorNumber]];
 				
 				colorButton.layer.cornerRadius = 4;
