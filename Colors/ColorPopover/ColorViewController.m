@@ -161,6 +161,7 @@
         }
         
     });//end block
+    dispatch_release(myQueue);
 }
 
 
