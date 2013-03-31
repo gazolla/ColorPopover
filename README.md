@@ -17,7 +17,7 @@ In order to install `ColorPopover`, you'll need to copy the ColorPopover folder 
 
 In order to use `ColorPopover`, you'll need to include the following code in your project:
 
-    if (!self.popoverController) {
+    if (!self.wePopoverController) {
 		
 		ColorViewController *contentViewController = [[ColorViewController alloc] init];
         contentViewController.delegate = self;
