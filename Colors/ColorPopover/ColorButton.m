@@ -10,6 +10,6 @@
 
 
 @implementation ColorButton
-@synthesize hexColor;
+
 
 @end

@@ -14,7 +14,6 @@
 
 @implementation ColorViewController
 
-@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -167,7 +166,7 @@
 
 -(void) buttonPushed:(id)sender{    
     ColorButton *btn = (ColorButton *)sender;
-    [delegate colorPopoverControllerDidSelectColor:btn.hexColor];
+    [self.delegate colorPopoverControllerDidSelectColor:btn.hexColor];
 }
 
 

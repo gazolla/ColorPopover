@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A84B7911708D7C5007E827C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A84B7901708D7C5007E827C /* Default-568h@2x.png */; };
 		9AD4241315F1727F0068242B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD4241215F1727F0068242B /* QuartzCore.framework */; };
 		9AD4244E15F1C0EC0068242B /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4244115F1C0EC0068242B /* ColorButton.m */; };
 		9AD4244F15F1C0EC0068242B /* GzColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4244315F1C0EC0068242B /* GzColors.m */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A84B7901708D7C5007E827C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9AD4241215F1727F0068242B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9AD4244015F1C0EC0068242B /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
 		9AD4244115F1C0EC0068242B /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		9AD5DB7215F0604E005BBAC2 = {
 			isa = PBXGroup;
 			children = (
+				9A84B7901708D7C5007E827C /* Default-568h@2x.png */,
 				9AD5DB8715F0604E005BBAC2 /* ColorPopoverDemo */,
 				9AD5DB8015F0604E005BBAC2 /* Frameworks */,
 				9AD5DB7E15F0604E005BBAC2 /* Products */,
@@ -241,7 +244,7 @@
 		9AD5DB7415F0604E005BBAC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Gazolla;
 			};
 			buildConfigurationList = 9AD5DB7715F0604E005BBAC2 /* Build configuration list for PBXProject "ColorPopoverDemo" */;
@@ -285,6 +288,7 @@
 				9AD4248215F1C6150068242B /* popoverBg@2x.png in Resources */,
 				9AD4248315F1C6150068242B /* popoverBgSimple.png in Resources */,
 				9AD4248415F1C6150068242B /* README in Resources */,
+				9A84B7911708D7C5007E827C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +341,9 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -364,6 +371,9 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;

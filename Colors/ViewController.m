@@ -15,9 +15,6 @@
 
 @implementation ViewController
 
-@synthesize btn;
-@synthesize popoverController;
-
 
 - (void)viewDidLoad
 {
@@ -41,7 +38,7 @@
 
 - (void)popoverControllerDidDismissPopover:(WEPopoverController *)thePopoverController {
 	//Safe to release the popover here
-	self.popoverController = nil;
+	self.wePopoverController = nil;
 }
 
 - (BOOL)popoverControllerShouldDismissPopover:(WEPopoverController *)thePopoverController {
@@ -54,22 +51,22 @@
 #pragma mark Button event implementation
 
 - (IBAction)buttonTapped:(id)sender {
-    if (!self.popoverController) {
+    if (!self.wePopoverController) {
 		
 		ColorViewController *contentViewController = [[ColorViewController alloc] init];
         contentViewController.delegate = self;
-		self.popoverController = [[WEPopoverController alloc] initWithContentViewController:contentViewController];
-		self.popoverController.delegate = self;
-		self.popoverController.passthroughViews = [NSArray arrayWithObject:self.navigationController.navigationBar];
+		self.wePopoverController = [[WEPopoverController alloc] initWithContentViewController:contentViewController];
+		self.wePopoverController.delegate = self;
+		self.wePopoverController.passthroughViews = [NSArray arrayWithObject:self.navigationController.navigationBar];
 		
-		[self.popoverController presentPopoverFromRect:btn.frame
+		[self.wePopoverController presentPopoverFromRect:self.btn.frame
                                                 inView:self.view
                               permittedArrowDirections:(UIPopoverArrowDirectionUp|UIPopoverArrowDirectionDown)
                                               animated:YES];
         
 	} else {
-		[self.popoverController dismissPopoverAnimated:YES];
-		self.popoverController = nil;
+		[self.wePopoverController dismissPopoverAnimated:YES];
+		self.wePopoverController = nil;
 	}
 
 }
@@ -77,7 +74,7 @@
 -(void) colorPopoverControllerDidSelectColor:(NSString *)hexColor{
     self.view.backgroundColor = [GzColors colorFromHex:hexColor];
     [self.view setNeedsDisplay];
-    [self.popoverController dismissPopoverAnimated:YES];
-    self.popoverController = nil;
+    [self.wePopoverController dismissPopoverAnimated:YES];
+    self.wePopoverController = nil;
 }
 @end
