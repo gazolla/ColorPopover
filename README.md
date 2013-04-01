@@ -4,7 +4,7 @@ A ColorPopover is a very simple component for iPhone/iPad that provides a "Popov
 
 ![](https://github.com/gazolla/ColorPopover/raw/master/screenshot.PNG)
 
-![](http://youtu.be/cIc2_QJgXu8)
+Youtube video: http://youtu.be/cIc2_QJgXu8
 
 ##Supported Platforms
 
