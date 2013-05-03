@@ -20,8 +20,8 @@
 
 @interface ColorViewController : UIViewController
 
-@property (nonatomic, strong) NSMutableArray *buttonCollection;
 @property (nonatomic, strong) NSArray *colorCollection;
 @property (nonatomic, weak) id <ColorViewControllerDelegate> delegate;
 
 @end
+

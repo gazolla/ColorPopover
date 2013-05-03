@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9AD5DB7C15F0604E005BBAC2"
-               BuildableName = "Colors.app"
+               BuildableName = "ColorPopoverDemo.app"
                BlueprintName = "ColorPopoverDemo"
                ReferencedContainer = "container:ColorPopoverDemo.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AD5DB7C15F0604E005BBAC2"
-            BuildableName = "Colors.app"
+            BuildableName = "ColorPopoverDemo.app"
             BlueprintName = "ColorPopoverDemo"
             ReferencedContainer = "container:ColorPopoverDemo.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AD5DB7C15F0604E005BBAC2"
-            BuildableName = "Colors.app"
+            BuildableName = "ColorPopoverDemo.app"
             BlueprintName = "ColorPopoverDemo"
             ReferencedContainer = "container:ColorPopoverDemo.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AD5DB7C15F0604E005BBAC2"
-            BuildableName = "Colors.app"
+            BuildableName = "ColorPopoverDemo.app"
             BlueprintName = "ColorPopoverDemo"
             ReferencedContainer = "container:ColorPopoverDemo.xcodeproj">
          </BuildableReference>
