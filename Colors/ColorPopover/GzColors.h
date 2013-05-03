@@ -287,6 +287,8 @@ YellowGreen;
 
 @interface GzColors : NSObject
 
++ (NSString*) accessibilityLabelForColor:(NSString *)color;
+
 + (UIColor *) colorFromHex:(NSString *)hex;
 
 @end
