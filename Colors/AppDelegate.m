@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Colors
 //
-//  Created by Gazolla on 31/08/12.
+//  Created by Gazolla on 31/08/13.
 //  Copyright (c) 2012 Gazolla. All rights reserved.
 //
 
