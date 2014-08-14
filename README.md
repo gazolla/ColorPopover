@@ -45,7 +45,7 @@ You will want to implement the method `colorPopoverControllerDidSelectColor:(NSS
  
 ##Credits & Contributors
 
-`ColorPopover` was written by [Sebastian Gazolla Jr][1].
+`ColorPopover` was written by Sebastian Gazolla Jr.
 
 * [http://about.me/gazolla](http://about.me/gazolla)
 
