@@ -8,6 +8,24 @@
 
 #import "ColorViewController.h"
 
+//A scrollview subclass that allows drags on UIButtons
+@interface ColorScroll : UIScrollView
+
+@end
+
+@implementation ColorScroll
+
+- (BOOL)touchesShouldCancelInContentView:(UIView *)view
+{
+    if ( [view isKindOfClass:[UIButton class]] ) {
+        return YES;
+    }
+    
+    return [super touchesShouldCancelInContentView:view];
+}
+
+@end
+
 @interface ColorViewController ()
 @property (nonatomic, strong) UIScrollView* scrollView;
 @property (nonatomic, strong) NSArray* colorButtons;
@@ -40,7 +58,11 @@ const CGSize kLandscapeContentSize = { 320, 170 };
     
 	CGRect scrollViewFrame = CGRectZero;
 	scrollViewFrame.size = self.contentSizeForViewInPopover;
-	self.scrollView = [[UIScrollView alloc] initWithFrame:scrollViewFrame];
+
+	//Allow scrollview to scroll when buttons dragged
+	self.scrollView = [[ColorScroll alloc] initWithFrame:scrollViewFrame]; 
+    	self.scrollView.canCancelContentTouches = YES;
+	
 	[self.view addSubview:self.scrollView];
     
 	[self createSimplyfiedOrdenatedColorsArray];
