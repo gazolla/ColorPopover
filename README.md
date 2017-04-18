@@ -1,4 +1,4 @@
-#ColorPopover
+# ColorPopover
 
 A ColorPopover is a very simple component for iPhone/iPad that provides a "Popover" color picker.
 
@@ -6,15 +6,15 @@ A ColorPopover is a very simple component for iPhone/iPad that provides a "Popov
 
 Youtube video: http://youtu.be/cIc2_QJgXu8
 
-##Supported Platforms
+## Supported Platforms
 
 - iOS 5+
 
-##Installing
+## Installing
 
 In order to install `ColorPopover`, you'll need to copy the ColorPopover folder into your Xcode project. 
 
-###Usage
+### Usage
 
 In order to use `ColorPopover`, you'll need to include the following code in your project:
 
@@ -43,7 +43,7 @@ You will want to implement the method `colorPopoverControllerDidSelectColor:(NSS
 
 
  
-##Credits & Contributors
+## Credits & Contributors
 
 `ColorPopover` was written by Sebastian Gazolla Jr.
 
@@ -55,7 +55,7 @@ ColorPopover based on WEPopover Created by Werner Altewischer:
 - [Werner Altewischer](https://github.com/werner77/WEPopover)
 
   
-##License
+## License
 
 `ColorPopover` is licensed under the MIT license, which is reproduced in its entirety here:
 
